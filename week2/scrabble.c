@@ -1,3 +1,6 @@
+/* Exercicio Scrabble. Dois jogadores digitam uma palavra e cada letra da palavra possui 
+uma pontuação relacionada seguindo a tabela de pontos. O retorno é quem venceu ou empate*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -38,6 +41,7 @@ int main()
     for (int i = 0; i < 26; i++)
         letters[i][0] = (int)65 + i;
 
+    //tabela de pontos
     int points[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3,
                     1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
