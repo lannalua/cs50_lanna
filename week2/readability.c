@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <math.h>
-
 /*
  * Objective: This program calculates the readability of a text using the
  * Coleman-Liau index. The index is designed to output a U.S.
@@ -12,7 +6,14 @@
  * Input: a string of text from standard input.
  *
  * Output: calculated grade level, such as "Grade 5" or "Before Grade 1".
- */
+ */ 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+
 
 int count_letters(char *str)
 {
