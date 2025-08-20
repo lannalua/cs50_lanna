@@ -12,19 +12,17 @@
     - The encrypted ciphertext string, printed to the console.
 */
 
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
 
-
 // function to apply Caesar cipher to a string using the given key
-char* rotate(char *c, int key)
+char *rotate(char *c, int key)
 {
-    int size = strlen(c);
+    // int size = strlen(c);
 
-    for (int i=0; i < size; i++)
+    for (int i = 0; c[i] != '\0'; i++)
     {
         // uppercase letter
         if (c[i] >= 65 && c[i] <= 90)
@@ -88,7 +86,7 @@ int main(int argc, char *argv[])
     printf("plaintext: ");
     scanf("%s", plaintext);
 
-    //print the encrypted key
+    // print the encrypted key
     printf("cyphentext: %s", rotate(plaintext, key));
 
     free(plaintext);
